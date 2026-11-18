@@ -487,7 +487,7 @@ function renderPlayers() {
     <header class="top"><h1>Jogadores</h1><button class="btn primary small" id="add">${icon('plus', 'sm')}Novo</button></header>
     ${people.length ? `<div class="card people">${rows}</div>` : `
       <section class="empty"><div class="logo-glow">${icon('players', 'xl accent')}</div>
-        <h2>O teu grupo de jogo</h2><p>Junta as pessoas com quem jogas para contar vitórias e decks de cada uma.</p></section>`}`;
+        <h2>O teu grupo de jogo</h2><p>Regista as tuas partidas de grupo</p></section>`}`;
 
   view.querySelector('#add').addEventListener('click', async () => {
     const n = await askText('Novo jogador', { placeholder: 'Nome' });
