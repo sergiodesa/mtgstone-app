@@ -127,9 +127,7 @@ function renderGames() {
           <li><span>Aqui, toca em <b>Ler QR</b> e aponta para o ecrã</span></li>
         </ol>
         <a class="btn primary big" href="#/scan">${icon('scan')}Ler QR</a>
-        <button class="btn ghost" id="demo">Ver com jogos de exemplo</button>
       </section>`;
-    view.querySelector('#demo').addEventListener('click', loadDemo);
     return;
   }
   const s = stats(list, people);
